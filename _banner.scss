@@ -1,0 +1,90 @@
+
+
+// .............................................
+
+.banner
+{
+  margin-bottom: 5em;
+  position:relative; 
+  img
+  {
+    width:100%;
+  }
+
+
+  @at-root
+  {
+    &__container
+    {
+      position:absolute;
+      top:26rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      color:$clr-goldenrod;
+      width:100%;
+      left:11rem;
+      @extend .container;
+  
+      .banner__head
+      {
+        display: inline-block; 
+        font-size: 5.7rem;
+        background-color: $clr-lightdeep-green;
+        padding:0 1.3rem 0 1.3rem;
+        font-weight: bold;
+        color: $clr-white;
+        border-radius: 0.5rem;
+      }
+      .banner__title
+      {
+        display: inline-block;
+       
+        font-size: 3.5rem;
+        background-color: $clr-deepdeep-green;
+        font-weight: bold;
+        color: $clr-white;
+        margin-top:0.5rem;
+        padding:1rem 2rem 1rem 2rem;
+        border-radius: 0.5rem;
+      }
+      .banner__detail-link
+      {
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 2rem;
+        font-size: 2.2rem;
+        background-color: $clr-white;
+        text-align: center;
+        padding: 1rem 2rem 1rem 2rem;
+        color: $clr-black;
+        font-weight: 400;
+      }
+  
+    }
+  }
+
+
+  @at-root
+  {
+    &__pagedown-outer-box
+    {
+  
+      position: absolute;
+      background-color:  $clr-lightdeep-green;
+      left: 50%;
+      right: 50%;
+      top: 93%;
+      padding: 2.1rem 4rem;
+      display: flex;
+      justify-content: center;
+  
+      .banner__pagedown-inner-box
+      {
+        border:3px solid $clr-white;
+        padding:1.1rem 0.7rem;
+      }
+    }
+  }
+
+}
